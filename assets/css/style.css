@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/dust_scratches.png");
+  font-size: 100%;
+  margin: 0;
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+  color: #777777;
+}
+
+header {
+  background-color: #ffffff;
+  font-family: Georgia, Times, Times New Roman, serif;
+  border-bottom: 0.1em solid #cccccc;
+}
+
+footer {
+  background-color: #666666;
+}
+
+h2 {
+  color: #4aaaa5;
+  border-bottom: 0.1em solid #dddddd;
+  padding-bottom: 0.85em;
+  margin: 0;
+  font-size: 1.9em;
+}
+
+nav {
+  float: right;
+  list-style: none;
+}
+
+textarea {
+  width: 898px;
+  height: 200px;
+}
+
+.submit {
+  background-color: #cbf7f4;
+  color: #bdb8b8;
+  width: 6.5em;
+  height: 2.3em;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-top: 0.6em;
+  border-radius: 7px;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.submit:hover {
+  background-color: #4aaaa5;
+  color: #ffffff;
+}
+
+.input {
+  width: 898px;
+  height: 28px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.logo {
+  float: left;
+  color: #ffffff;
+  background-color: #4aaaa5;
+  margin: 0;
+  padding: 0.99em 1.1em;
+  font-size: 1.8em;
+}
+
+.prof-img {
+  float: left;
+  margin: 0 1.5em 1.2em 0;
+  height: 170px;
+  width: 200px;
+  padding-top: 0.6em;
+}
+
+.content-section {
+  padding: 2.2em 1.9em;
+  background-color: #ffffff;
+  border: 0.05em solid #dddddd;
+  margin-top: 2.25em;
+}
+
+.content {
+  margin-top: 1.2em;
+  line-height: 200%;
+}
+
+.content p {
+  margin: 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.7em;
+  color: #ffffff;
+  border-top: 8px solid #4aaaa5;
+}
+
+.portfolio {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+
+.content img {
+  float: left;
+  margin-right: 2.8em;
+  margin-bottom: 2.1em;
+  margin-top: 1em;
+}
+
+.img-portfolio {
+  float: left;
+}
+
+#img1 {
+  position: absolute;
+  top: 0%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 2em;
+  margin-top: 2.2em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.7em;
+  font-size: 0.95em;
+}
+
+nav a:link,
+nav a:visited {
+  color: #777777;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #4aaaa5;
+  transition: ease-in-out 0.3s;
+}
+
+/* Nav block element for hover transition effect */
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 0.25em;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  background-color: #4aaaa5;
+  transition: all ease-in-out 0.3s;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
